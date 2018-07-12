@@ -1,0 +1,72 @@
+html {
+  background: url(../images/Background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-Background-size: cover;
+  background-size: cover;
+  font-family: 'Helvetica Neu', sans-serif;
+}
+
+.prof-box {
+  width: 349px;
+  height: 445px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  color: white;
+  margin: 0 auto;
+  margin-top: 140px;
+  text-align: center;
+  border-radius: 7.5%;
+}
+
+.coming-soon {
+  width: 349px;
+  height: 425px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  color: white;
+  margin: 0 auto;
+  margin-top: 140px;
+  text-align: center;
+  font-size: 50px;
+  border-radius: 7.5%;
+}
+
+.line-break {
+  width: 300px;
+  border-top: 1px solid white;
+  margin: 0 auto;
+}
+
+.prof-pic{
+  width: 150px;
+  height: 150px;
+}
+
+.timer {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.github-pic {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+a img:hover {
+  opacity: 0.6;
+}
+
+h1 {
+  font-weight: 100;
+  letter-spacing: 6;
+  font-size: 40px;
+}
+
+p {
+  text-align: left;
+  font-weight: 200;
+  letter-spacing: 1;
+}
