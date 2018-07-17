@@ -19,19 +19,6 @@ html {
   border-radius: 7.5%;
 }
 
-.coming-soon {
-  width: 349px;
-  height: 425px;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 40px;
-  color: white;
-  margin: 0 auto;
-  margin-top: 140px;
-  text-align: center;
-  font-size: 50px;
-  border-radius: 7.5%;
-}
-
 .line-break {
   width: 300px;
   border-top: 1px solid white;
@@ -42,6 +29,7 @@ html {
   width: 150px;
   height: 150px;
 }
+
 
 .timer-icon {
   border-radius: 100%;
