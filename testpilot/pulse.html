@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3//jquery.min.js"></script>
+    <script src="js/pulse.js"></script>
+    <link rel="stylesheet" href="css/home.css">
+
+<style>
+
+#c {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  margin-left: -260px;
+}
+
+.s {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  float: left;
+  transition: all 0.2s;
+}
+
+.s:nth-child(n+2) {
+  margin-left: 80px;
+}
+
+.s:nth-child(1) {
+background: #33ffbb;
+animation: r0 2s 0s ease-out infinite;
+}
+
+.s:nth-child(1):hover {
+background: #ff3333;
+animation: r20 0.5s 0.4s ease-out infinite;
+}
+
+@keyframes r0 {
+  0% {
+    box-shadow: 0 0 8px 6px rgba(26, 255, 179, 0), 0 0 0px 0px #333, 0 0 0px 0px rgba(26, 255, 179, 0);
+  }
+
+  10% {
+    box-shadow: 0 0 8px 6px #1affb3, 0 0 12px 10px #333, 0 0 12px 10px #1affb3;
+  }
+
+  100% {
+    box-shadow: 0 0 8px 6px rgba(26, 255, 179, 0), 0 0 0px 40px #333, 0 0 0px 40px rgba(26, 255, 179, 0);
+  }
+}
+
+@keyframes r20 {
+  from {
+    box-shadow: 0 0 8px 6px #ff1a1a, 0 0 12px 10px #333, 0 0 12px 10px #ff1a1a;
+  }
+  to {
+    box-shadow: 0 0 8px 6px rgba(255, 26, 26, 0), 0 0 4px 40px #333, 0 0 4px 41px rgba(255, 26, 26, 0);
+  }
+}
+
+.s:nth-child(2) {
+  background: #33ffdd;
+  animation: r1 2s 0.25s ease-out infinite;
+}
+
+.s:nth-child(2):hover {
+background: #ff4733;
+animation: r21 0.5s 0.4s ease-out infinite;
+}
+
+@keyframes r1 {
+  0% {
+    box-shadow: 0 0 8px 6px rgba(26, 217, 217, 0), 0 0 0px 0px #333, 0 0 0px 0px rgba(26, 217, 179, 0);
+  }
+
+  10% {
+    box-shadow: 0 0 8px 6px #1affd9, 0 0 12px 10px #333, 0 0 12px 10px #1affd9;
+  }
+
+  100% {
+    box-shadow: 0 0 8px 6px rgba(26, 217, 179, 0), 0 0 0px 40px #333, 0 0 0px 40px rgba(26, 217, 179, 0);
+  }
+}
+}
+
+@keyframes r21 {
+  from {
+    box-shadow: 0 0 8px 6px #ff301a, 0 0 12px 10px #333, 0 0 12px 10px #ff301a;
+  }
+  to {
+    box-shadow: 0 0 8px 6px rgba(255, 48, 26, 0), 0 0 4px 40px #333, 0 0 4px 41px rgba(255, 48, 26, 0);
+  }
+}
+
+.s:nth-child(3) {
+background: #33ffff;
+animation: r2 2s 0.5s ease-out infinite;
+}
+
+.s:nth-child(3):hover {
+background: #ff5c33;
+animation: r22 0.5s 0.4s ease-out infinite;
+}
+
+@keyframes r2 {
+  0% {
+    box-shadow: 0 0 8px 6px rgba(26, 255, 255, 0), 0 0 0px 0px #333, 0 0 0px 0px rgba(26, 255, 255, 0);
+  }
+
+  10% {
+    box-shadow: 0 0 8px 6px #1affff, 0 0 12px 10px #333, 0 0 12px 10px #1affff;
+  }
+
+  100% {
+    box-shadow: 0 0 8px 6px rgba(26, 255, 255, 0), 0 0 0px 40px #333, 0 0 0px 40px rgba(26, 255, 255, 0);
+  }
+}
+}
+
+@keyframes r22 {
+  from {
+    box-shadow: 0 0 8px 6px #ff471a, 0 0 12px 10px #333, 0 0 12px 10px #ff471a;
+  }
+  to {
+    box-shadow: 0 0 8px 6px rgba(255, 71, 26, 0), 0 0 4px 40px #333, 0 0 4px 41px rgba(255, 71, 26, 0);
+  }
+}
+
+.s:nth-child(4) {
+background: #33ddff;
+animation: r3 2s 0.70s ease-out infinite;
+}
+
+.s:nth-child(4):hover {
+background: #ff7033;
+animation: r23 0.5s 0.4s ease-out infinite;
+}
+
+@keyframes r3 {
+  0% {
+    box-shadow: 0 0 8px 6px rgba(26, 217, 255, 0), 0 0 0px 0px #333, 0 0 0px 0px rgba(26, 217, 255, 0);
+  }
+
+  10% {
+    box-shadow: 0 0 8px 6px #1ad9ff, 0 0 12px 10px #333, 0 0 12px 10px #1ad9ff;
+  }
+
+  100% {
+    box-shadow: 0 0 8px 6px rgba(26, 217, 255, 0), 0 0 0px 40px #333, 0 0 0px 40px rgba(26, 217, 255, 0);
+  }
+}
+}
+
+@keyframes r23 {
+  from {
+    box-shadow: 0 0 8px 6px #ff5e1a, 0 0 12px 10px #333, 0 0 12px 10px #ff5e1a;
+  }
+  to {
+    box-shadow: 0 0 8px 6px rgba(255, 94, 26, 0), 0 0 4px 40px #333, 0 0 4px 41px rgba(255, 94, 26, 0);
+  }
+}
+
+.s:nth-child(5) {
+background: #33bbff;
+animation: r4 2s 0.5s ease-out infinite;
+}
+
+.s:nth-child(5):hover {
+background: #ff8533;
+animation: r23 0.5s 0.4s ease-out infinite;
+}
+
+@keyframes r4 {
+  0% {
+    box-shadow: 0 0 8px 6px rgba(26, 179, 255, 0), 0 0 0px 0px #333, 0 0 0px 0px rgba(26, 179, 255, 0);
+  }
+
+  10% {
+    box-shadow: 0 0 8px 6px #1ab3ff, 0 0 12px 10px #333, 0 0 12px 10px #1ab3ff;
+  }
+
+  100% {
+    box-shadow: 0 0 8px 6px rgba(26, 179, 255, 0), 0 0 0px 40px #333, 0 0 0px 40px rgba(26, 179, 255, 0);
+  }
+}
+}
+
+@keyframes r24 {
+  from {
+    box-shadow: 0 0 8px 6px #ff7f1a, 0 0 12px 10px #333, 0 0 12px 10px #ff7f1a;
+  }
+  to {
+    box-shadow: 0 0 8px 6px rgba(255, 117, 26, 0), 0 0 4px 40px #333, 0 0 4px 41px rgba(255, 117, 26, 0);
+  }
+}
+
+.s:nth-child(6) {
+background: #3399ff;
+animation: r5 2s 0.25s ease-out infinite;
+}
+
+.s:nth-child(6):hover {
+background: #ff9933;
+animation: r25 0.5s 0.4s ease-out infinite;
+}
+
+@keyframes r5 {
+  0% {
+    box-shadow: 0 0 8px 6px rgba(26, 140, 255, 0), 0 0 0px 0px #333, 0 0 0px 0px rgba(26, 140, 255, 0);
+  }
+
+  10% {
+    box-shadow: 0 0 8px 6px #18c3ff, 0 0 12px 10px #333, 0 0 12px 10px #18c3ff;
+  }
+
+  100% {
+    box-shadow: 0 0 8px 6px rgba(26, 140, 255, 0), 0 0 0px 40px #333, 0 0 0px 40px rgba(26, 140, 255, 0);
+  }
+}
+}
+
+@keyframes r25 {
+  from {
+    box-shadow: 0 0 8px 6px #ff8c1a, 0 0 12px 10px #333, 0 0 12px 10px #ff8c1a;
+  }
+  to {
+    box-shadow: 0 0 8px 6px rgba(255, 140, 26, 0), 0 0 4px 40px #333, 0 0 4px 41px rgba(255, 140, 26, 0);
+  }
+}
+
+.s:nth-child(7) {
+background: #3399ff;
+animation: r6 2s 0s ease-out infinite;
+}
+
+.s:nth-child(7):hover {
+background: #ff9933;
+animation: r26 0.5s 0.4s ease-out infinite;
+}
+
+@keyframes r6 {
+  0% {
+    box-shadow: 0 0 8px 6px rgba(26, 140, 255, 0), 0 0 0px 0px #333, 0 0 0px 0px rgba(26, 140, 255, 0);
+  }
+
+  10% {
+    box-shadow: 0 0 8px 6px #18c3ff, 0 0 12px 10px #333, 0 0 12px 10px #18c3ff;
+  }
+
+  100% {
+    box-shadow: 0 0 8px 6px rgba(26, 140, 255, 0), 0 0 0px 40px #333, 0 0 0px 40px rgba(26, 140, 255, 0);
+  }
+}
+}
+
+@keyframes r26 {
+  from {
+    box-shadow: 0 0 8px 6px #ff8c1a, 0 0 12px 10px #333, 0 0 12px 10px #ff8c1a;
+  }
+  to {
+    box-shadow: 0 0 8px 6px rgba(255, 169, 26, 0), 0 0 4px 40px #333, 0 0 4px 41px rgba(255, 169, 26, 0);
+  }
+}
+
+</style>
+
+  </head>
+
+  <body>
+    <div id="c">
+      <div class="s"></div>
+      <div class="s"></div>
+      <div class="s"></div>
+      <div class="s"></div>
+      <div class="s"></div>
+      <div class="s"></div>
+      <div class="s"></div>
+    </div>
+
+    <div id="ui">
+      <div class="bg"></div>
+      <div class="rings">
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+        <div class="ring">
+          <div class="border"></div>
+        </div>
+      </div>
+  </body>
+
+</html>
