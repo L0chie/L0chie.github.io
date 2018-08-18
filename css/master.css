@@ -9,14 +9,14 @@ html {
 
 .prof-box {
   width: 349px;
-  height: 445px;
+  height: 435px;
   background: rgba(0, 0, 0, 0.4);
   padding: 40px;
   color: white;
   margin: 0 auto;
   margin-top: 140px;
   text-align: center;
-  border-radius: 7.5%;
+  border-radius: 10%;
 }
 
 .line-break {
@@ -26,6 +26,7 @@ html {
 }
 
 .prof-pic{
+  border-radius: 100%;
   width: 150px;
   height: 150px;
 }
