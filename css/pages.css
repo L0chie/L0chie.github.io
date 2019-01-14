@@ -107,6 +107,10 @@ html {
   height: 60px;
 }
 
+h1 {
+  text-align: center;
+}
+
 h3 {
   margin-top: auto;
   margin-left: auto;
